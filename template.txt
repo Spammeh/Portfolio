@@ -1,0 +1,117 @@
+1. Navbar (Minimal Top-Level Navigation)
+    - Positioned at the top, stays visible as the user scrolls.
+    - Links: Home, About, Projects, Skills & Tools, Resume, Contact
+    - Keyboard-inspired icons next to each link (optiional) - e.g., an Enter key icon near "Contact"
+2. Hero Section (Landing Section)
+    - Bright and Popping Color Background:
+        - Use a vibrant gradient (e.g., Green-Blue + Coral)
+        - Centered Text: A Short tagline (e.g., "Crafting Digital Solutions with Purpose")
+        - Call-to-Action Button:
+            - Subtle animation (like pulse or hover effect)
+3. Projects Section (Bento Box Grid)
+    - Asymmetric Design:
+        - Cards of varying sizes and alignments (some aligned halfway).
+        - Hover effects: Cards slide or tilt subtly on hover.
+4. Skills & Tools Section
+    - Icons or List Style: Grouped under 'Frontend', 'Backend', 'Tools', etc.
+5. Resume Download Section
+    - Download Button with animation
+6. Contact Section
+    - Simple Form with Social Links
+7. Footer (Easter Egg Animation)
+    - Tennis Ball Easter Egg:
+        - A hover animation where the tennis ball bouncesi n the Footer
+
+Features to Add Later:
+    - Smooth Scrolling: Ensure links in the navbar scroll smoothly to sections.
+    - Dark/Light Mode Toggle (Optional): Let users toggle between light and dark mode for customization
+    - Subtle Animations on Scroll: Using Tailwind + Intersection Observer to animate cards.
+
+Keyboard-Inspired Animation Ideas
+1. Navbar Links with Keypress Hover effect
+    - Animation: When you hover over a link in the navbar, it briefly "presses down" like a physical key.
+    - Implementation Idea: The link shrinks slightly (scale-95) and bounces back to normal size on hover-out
+2. Interactive Call-to-Action Button (With Key Tap Feel)
+    - Animation: The button behaves like a key when clicked, with a subtle 'click down' effect, simulation a keypress.
+    - Implementation Idea: On click, the button breifly shrinks and changes background color, then reverts.
+3. Project Card Hover with 'Typing Cursor' Animation
+    - Animation: On hover, a blinking cursor effect appears briefly within the project card title, giving it a subtle 'typing' feel.
+    - Implementation Idea: Add a blinkign cursor element that shwos only on hover.
+4. Footer Easter Egg with Keyboard Typing Sound
+    - Animation: When a user hovers over the tennis ball in the footer, it simulates a soft keyboard typing sound or clicks on each hover.
+    - Implementation Idea: On hover, play a sound effect, mimicking the sound of a mechanical keypress. (Use Javascript to trigger audio)
+5. Mini "Keys" on Scroll Animation
+    - Animation: Small key elements (like an ESC or CTRL key) slide in from the side as the user scrolls down to specific sections, adding palyful interaction without being intrusive.
+    - Implementation Idea: Use the Intersection Observer API to trgiger these mini keys when the user reaches certain points in the layout.
+6. Button Ripple Effect (Like Typing Keys Pressed)
+    - Animation: A ripple effect radiates from the point of click on buttons, simulating the feel of pressing keys on a keyboard.
+    - Implementation Idea: Use CSS to create a ripple effect that expands outward from the clicked position.
+
+Minimalist Aniamted Background Ideas
+1. Slow Gradient Shift (Ambient Effect)
+    - How It Works: A slow color transition between two or more subtle colors over time (like green-blue shifting towards a soft coral).
+    - Why It Works: Adds depbt and life to the background without overwhelming the user.
+2. Subtle Noise Effect (Moving Particles)
+    - How It Works: Small, low-opacity dots or particles move very slowly in the background, almost like static.
+    - Why It Works: Adds texture and interest while remaining subtle. Particles shouldn't draw attention - the motion should be very slow.
+3. Horizontal or Diagonal Line Animation (Slow Movement)
+    - How It Works: Very subtle lines moving horizontally or diagonally across the screen.
+    - Why It Works: Provides a sense of movement while still being minimalist.
+4. Minimal Dot Grid Animation
+    - How It Works: A grid of small dots gently shifts or scales in the background.
+    - Why It Works: Adds some geometric flair while keeping things structured and clean.
+5. Soft Wave Animation (Minimal Fluid Motion)
+    - How It Works: Animated wavy lines move across the background to convey fluidity and calmness.
+    - Why It Works: Provides visual interest without feeling over-the-top.
+
+Tips for Using Animated Backgrounds in Minimalist Design:
+    1. Keep ANimations Slow: Avoid fast or jarring movements. Minimalist animations should feel ambient and subtle.
+    2. Use Low-Opacity Elements: Ensure that animations don't overpower the content.
+    3. Limit Animation to Specific Sections: Apply animations only to the hero section or select areas to create focus.
+    4. Disable Animations on Mobile: Ensure animations don't impact performance on mobile devices.
+
+Recommended Option for You:
+Given your preference for a standout hero section, I suggest going with the slow gradient shift of minimal fot grid animation. These will make the hero section pop while fitting the minimalist aesthetic of your portfolio.
+
+Background Options and Themes
+    1. Light Neutral Background Theme
+        - Hero section: Vibrant green-blue (#38b2ac) as the dominant color
+        - Background: White (#F7FAFC) or Light Gray (#EDF2F7)
+        - Typography: Dark gray text (#2D3748) for body and Black (#1A202C) for headings.
+        - Hover Color Shift: From green-blue to teal or coral on buttons.
+        - Footer: Green-blue hero color or dark slate background (#2D3748) with white text.
+
+    2. Expressive Background Theme (Soft Pastel or Muted Colors)
+        - Hero Section: Bold use of green-blue combined with a muted yellow (#FFDD57) or coral accent (#FF6F61)
+        - Background: A soft mint or light teal background (#E6FFFA) to complement the Ikasaya branding
+        - Typography: Use black text for readability and green-blue for headings and links.
+        - Hover Color Shift: From green-blue to coral or pastel yellow for playful interaction.
+        - Footer: Same bold design as the hero, probably a darker green-blue background with contrasting text.
+
+Font Recommendations for Your portfolio
+    1. Sans-Serif (Clean, Minimal, Modern)
+        - Poppins: Use Case: Hero Section, buttons, headings
+        - Inter: Use Case: General-purpose font for body text, buttons, and sections
+        - Montserrat: Use case: HEadings or CTA buttons to make them stand out.
+    2. Serif (Touch of Sophistication)
+        - Playfiar Display: Use case: For section headers or hero tagline text
+        - Lora: Use Case: Can be used for body text if you want a unique, artistic feel.
+    3. Monospace (For a Playful, Developer Vibe)
+        - IBM Plex Mono: USe case: For code snippets or minor elements to add a playful, developer-inspired Touch
+        - Space Mono: Use case: For easer eggs or mini keyboard elements like icons.
+
+Font Pairing Ideas
+    1. Poppins  Inter:
+        - Poppins for headings an buttons, Inter for body text.
+    2. Montserrat + IBM Plex Mono:
+        - Montserrat for hero text and section titles, IBM Plex Mono for code snippets or easter eggs.
+    3. Playfair Display + Lora:
+        - Playfair for headings, Lora for body text.
+    4. Poppins + Space Mono:
+        - Poppins for titles and buttons, Space Mono for keyboard-inspired elements.
+
+Recommendation for Your portfolio
+Based on your preferences:
+    - Primary Font for Headings/Buttons: Poppins or Montserrat for a modern look.
+    - Body Text: Inter for readability and consistency.
+    - For Keyboard-Inspired Elements: IBM Plex Mono or Space Mono
